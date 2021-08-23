@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  background-color: hsl(233, 47%, 7%);
+
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sub-container {
+    display: flex;
+    padding: 100px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-top: 0;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+}
+
+.first-column, .second-column {
+    width: 50%;
+    padding: 90px;
+}
+
+.first-column {
+    border-radius: 10px 0px 0px 10px;
+    background: hsl(244, 38%, 16%);
+}
+
+.second-column {
+    border-radius: 0px 10px 10px 0px;
+    background-image: url('https://i.ibb.co/4J2yzXz/image-header-desktop.jpg'), linear-gradient(rgb(100,54,127),rgb(100,54,127));
+    background-blend-mode: overlay;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.three-inner-columns-section {
+    display: flex;
+    gap: 10%;
+    margin-top: 30px;
+  }
+
+[class*="-tics"] p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: .1rem;
+  }
+
+/* Smaller than [ 480px ] - Mobile */
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    margin-top: 9px;
+  }
+
+  .sub-container {
+    flex-direction: column-reverse;
+    padding: 20px !important;
+    align-items: center;
+  }
+
+  .first-column, .second-column {
+    width: 316px !important;
+    padding: 0 !important;
+  }
+
+  .first-column {
+    border-radius: 0px 0px 10px 10px !important;
+  }
+
+  .second-column {
+    border-radius: 10px 10px 0px 0px !important;
+  }
+
+  .first-column-inner {
+    padding: 30px;
+    text-align: center;
+    }
+
+    .three-inner-columns-section {
+      display: block !important;
+    }
+
+    [class*="-tics"] {
+      margin-top: 45px;
+    }
+
+  .second-column {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .first-column, .second-column {
+    max-width: 280px !important;
+  }
+}
+
+@media (min-height: 1024px) and (max-width: 768px) {
+  .first-column, .second-column {
+    padding: 0 !important;
+  }
+
+  .first-column-inner {
+    padding: 30px !important;
+  }
+
+  .three-inner-columns-section {
+    display: block;
+  }
+}
